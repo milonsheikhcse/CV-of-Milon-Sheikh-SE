@@ -1,0 +1,320 @@
+
+%------------for finding code scroll down and go to code here ----------
+
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicons fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=2cm,right=2cm,top=1cm,bottom=1cm,columnsep=0.60cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage{graphicx}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% ----- LIGHT MODE -----
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{PrimaryColor}{HTML}{001F5A}
+\definecolor{SecondaryColor}{HTML}{0039AC}
+\definecolor{ThirdColor}{HTML}{F3890B}
+\definecolor{BackgroundColor}{HTML}{FFFFFF}
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{PrimaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{ThirdColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\pagecolor{BackgroundColor}   
+    \usepackage{hyperref} 
+     \hypersetup{ 
+         colorlinks=true, 
+         linkcolor=blue, 
+         filecolor=blue, 
+         citecolor = black,       
+         urlcolor=cyan, 
+         } 
+% ----- DARK MODE -----
+%\definecolor{BackgroundColor}{HTML}{242424}
+%\definecolor{SlateGrey}{HTML}{6F6F6F}
+%\definecolor{LightGrey}{HTML}{ABABAB}
+%\definecolor{PrimaryColor}{HTML}{3F7FFF}
+%\colorlet{name}{PrimaryColor}
+%\colorlet{tagline}{PrimaryColor}
+%\colorlet{heading}{PrimaryColor}
+%\colorlet{headingrule}{PrimaryColor}
+%\colorlet{subheading}{PrimaryColor}
+%\colorlet{accent}{PrimaryColor}
+%\colorlet{emphasis}{LightGrey}
+%\colorlet{body}{LightGrey}
+%\pagecolor{BackgroundColor}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\small\bfseries}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+% \textbf{\includegraphics[height=10pt,width=10pt]{Angular_icon.png} Angular}
+%% sample.bib contains your publications
+%% \addbibresource{sample.bib}
+
+
+
+%----------------------- Code Here ----------------
+
+
+
+\begin{document}
+\vspace{-25pt}
+%------------------------Title / contact ----------
+
+    \name{\LARGE Md. Milon Sheikh}
+    \tagline{ B.Sc. Engg. in Computer Science \& Engineering}
+    %% You can add multiple photos on the left or right
+    \photoL{4cm}{me.jpg}
+    
+    \personalinfo{
+        \email{milonsheikhcse@gmail.com}\smallskip
+        %\phone{+88 01749 836030}
+        \small \href{tel:+88 01719 363041}{ \raisebox{-0.1\height}\faPhone\ {+88 01719 363041} ~}
+        
+        \github{milonsheikhcse}
+        \hspace{47pt}
+        \linkedin{milonsheikhcse} \\
+        \location{House No: 06, Benaroshi polli, Block-A, Lane No: 18, Mirpur-10.}
+        
+        
+   
+    }
+    
+    \makecvheader
+
+    \columnratio{0.35}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+    \begin{paracol}{1}
+
+        
+ % ------------------ CAREER OBJECTIVE------------------------------
+ 
+\vspace{-18pt}
+        \cvsection{ \small CAREER OBJECTIVE}
+            \begin{itemize}
+                \textcolor{black}{\small I count myself as a hardworking person. To pursue a challenging career in a competitive world
+where enthusiasm, honesty, hard work and passion will support me to grow myself as well as
+utilize my knowledge and expertise for professional development in the relevant field.}
+            \end{itemize}
+
+\vspace{-17pt}
+
+% ------------------- Technical Skills-----------------------------
+
+
+\cvsection{ \small Technical Skills} 
+            \cvtag{\scriptsize C,C++}
+             \cvtag{\scriptsize Java}
+              \cvtag{\scriptsize Python ( Basic )}
+             \cvtag{\scriptsize HTML}
+            \cvtag{\scriptsize CSS} 
+           \cvtag{\scriptsize Javascript}
+           \cvtag{\scriptsize Jquery}
+             \cvtag{\scriptsize React}
+             \cvtag{\scriptsize Django}
+             \cvtag{\scriptsize DBMS}
+             \vspace*{-\baselineskip}
+           
+
+\vspace{-14 pt}
+
+ % ----- EDUCATION ---------------------------------------------------
+ 
+ 
+        \cvsection{ \small  Education}
+        \cvevent{\textcolor{black}{\textbf{ \footnotesize  B.Sc. Engineering in Computer Science \& Engineering}} }{|\footnotesize Bangabandhu Sheikh Mujibur Rahman Science and Technology University}
+        {\footnotesize Session 2016-17}{\footnotesize BSMRSTU, Gopalganj, Bangladesh}
+        \begin{itemize}
+                \item  \footnotesize CGPA:  AVG 3.20 [4-2 result not published
+yet.]
+            \end{itemize}
+            
+%-------------------- Thesis Work-------------------------------
+
+
+        % \cvsection{ \large Thesis Works}
+        %  \cvevent{Emotion Detection Through Bangla Text From Social Media Post or Comment. }{\cvrepo{| ML \faGithub}{https://cutt.ly/4AcovZz}}{2021}{BSMRSTU, Bangladesh}
+            
+\vspace{-15pt}
+
+%--------------------- PROJECTS WORK & Thesis work -----------------
+
+\cvsection{ \small  Projects \& Thesis}
+%------ pro 1
+         \cvevent{\small 1. Emotion Detection Through Bangla Text From Social Media Post or Comment.}{\cvrepo{| \small  ML \faGithub}{https://cutt.ly/4AcovZz} | 
+         \cvtag{ \footnotesize Python}
+         
+         }
+         {}{}
+\vspace{-10pt}        
+%----pro 2
+            \cvevent{\small 2. Project Showcase }{\cvrepo{| \small Front-End \& Back-End  \faGithub}{https://github.com/milonsheikhcse/project-showcase-3.2-Semester-Project} |  \cvtag{ \footnotesize Django}
+            \cvtag{ \footnotesize Python}
+            \cvtag{ \footnotesize HTML} 
+            \cvtag{ \footnotesize CSS} 
+            \cvtag{ \footnotesize JavaScript}
+            }
+            {}{}
+ \vspace{-10pt}          
+%----pro 3 
+    \cvevent{\small 3. Hot gadgets}
+            {\cvrepo{| \small Front-End \faGithub}{https://github.com/milonsheikhcse/hot-gadgets}
+             \cvrepo{| \faGlobe}{https://milonsheikhcse.github.io/hot-gadgets/index.html}
+             |
+            \cvtag{ \footnotesize HTML} 
+            \cvtag{ \footnotesize CSS} 
+            \cvtag{ \footnotesize Jquery}
+             }
+           % {2020}{BSMRSTU, Bangladesh}
+            {}{}
+            
+\vspace{-10pt}            
+%----pro 4    
+            \cvevent{\small 4. Web Portfolio}
+            {\cvrepo{| \small Front-End \faGithub}{https://github.com/milonsheikhcse/web-portfolio}
+             \cvrepo{| \faGlobe}{https://milonsheikhcse.github.io/cv_project/index.html}
+             |
+            \cvtag{ \footnotesize HTML} 
+            \cvtag{ \footnotesize CSS} 
+             }
+            {}{}
+            
+            
+            
+%----pro 5   
+\vspace{-10pt}
+            \cvevent{\small 5. Book Review }
+            {\cvrepo{| \small Android-Application \faGithub}{https://github.com/milonsheikhcse/2nd_Year_Book-Review_Android_Project}
+             \cvrepo{| \faGlobe}{}
+             |
+            \cvtag{ \footnotesize Java} 
+            \cvtag{ \footnotesize Android} 
+             }
+            {}{}
+%----pro 6  
+\vspace{-10pt}
+            \cvevent{\small 6. Cricket Score Board Projcet }
+            {\cvrepo{| \small  \faGithub}{https://github.com/milonsheikhcse/1st_Year_Cricket_Score_Board_Project}
+             \cvrepo{| \faGlobe}{}
+             |
+            \cvtag{ \footnotesize C} 
+            \cvtag{ \footnotesize C++} 
+             }
+            {}{}
+           
+           
+\vspace{-20pt}
+
+%-----------------Code. Skill--------------------------------------
+
+ \cvsection{ \small  Coding Skills On Online Platform}
+ 
+ 
+         \cvachievement{\includegraphics[height=18pt,width=18pt]{codeforces_logo.png}}{\href{https://codeforces.com/profile/milon_sheikh_bsmrstu}{\color{blue}Codeforces Profile}}{Solved 60+ problems} 
+       %  \smallskip
+        \cvachievement{\includegraphics[height=18pt,width=18pt]{uva.png}}{\href{https://onlinejudge.org/index.php?option=com_comprofiler&Itemid=3}{\color{blue}Uva Profile}}{Solved 10+ problems}
+        \cvachievement{\includegraphics[height=18pt,width=18pt]{beecrowd.PNG}}{\href{https://www.beecrowd.com.br/judge/en/profile/149620}{\color{blue}URI Profile}}{Solved 10+ problems}
+        \cvachievement{\includegraphics[height=18pt,width=18pt]{leetcode.PNG}}{\href{https://www.beecrowd.com.br/judge/en/profile/149620}{\color{blue}Leet Code Profile}}{Solved 10+ problems}
+        
+        
+\vspace{-17pt}
+%------------------- inter ship -------------------------------------
+
+\cvsection{ \small  Internship}
+         \cvachievement{\faTrophy}{2018}{Training for Mobile Application Developer(Android) of ICT DIVISION}\\
+         \smallskip
+         \cvachievement{\faTrophy}{2019}{One month Industrial training at \textbf{\underline{\href{https://www.latechnologies.net/}{LA Technologies}}}  in Khulna.}
+
+
+             % Each of the department can share their information to the website by themselves.
+\vspace{-17pt}
+%------------------- Certificate ------------------------------------
+
+\cvsection{ \small  Certificate}
+         
+         \textcolor{black}{\small Python 101 for Data Science Powerd by IBM Developer Skills Network\href{https://cutt.ly/CDh2U9n}{ \textbf{| \small Link}}} \\
+         \textcolor{black}{\small Introduction to Python provided by Anlytics Vidhya \href{https://cutt.ly/fDh0se7}{| \textbf{\small Link}} }
+         
+\vspace{-10pt}
+%------------------- Reference --------------------
+
+% \cvsection{ \small  References}
+%         %\begin{center}
+        
+%              \begin{tabular}{ll}
+%             \textcolor{black}{ Jamal Uddin }  &  \textcolor{black}{Sanjit Majumdar} \\
+%             \textcolor{black}{Assistant Professor} & \textcolor{black}{Software Engineer}\\
+%             \textcolor{black}{Department of Computer Science \& Engineering (CSE)} & \textcolor{black}{Brain Station-23}\\
+%             \textcolor{black}{BSMRSTU, Gopalganj, Bangladesh} & \textcolor{black}{Dhaka, Bangladesh}\\
+%             \phone{+88 01734 531900}& \phone{+88 01927 025242}\\
+%             \email{jamal.bsmrstu@gmail.com } & \email{sanjit.majumdar.201312@gmail.com} \\
+           
+%              \end{tabular}
+%         %\end{center}
+        
+        
+ \newpage        
+
+           
+% %-------------------language------------------
+
+%         \cvsection{\small LANGUAGES }
+        
+%       %  \textbullet \textcolor{black}{Bangla : Writing-\textit{Excellent}, Reading-\textit{Excellent}, Listening-\textit{Excellent} and Speaking-\textit{Excellent}} \\
+%       \cvtag{\textcolor{black}{\small Bangla : \small Writing-\textit{\small Excellent}, Reading-\textit{\small Excellent}, \small Listening-\textit{\small Excellent} \small and Speaking-\textit{\small Excellent}}}
+%          \\
+%          \cvtag{\textcolor{black}{\small English : Writing-\textit{\small Excellent}, \small Reading-\textit{\small Excellent}, \small Listening-\textit{\small Good}\small  and Speaking-\textit{\small Good}}}
+%           \\
+ 
+        
+% %--------------------------- DECLARATION --------------
+
+%          \cvsection{DECLARATION}
+%             \textcolor{black}{In the undersigned, certify that, to the best of my knowledge and belief this CV correctly describes my qualifications and me. I understand that any willful misstatement described herein may lead to my disqualification or dismissal, if employed.}\\
+% \smallskip
+% \includegraphics[height=1.5\baselineskip]{signature.jpg} \par
+%       \textcolor{black}{Md. Milon Sheikh}
+        
+       
+    \end{paracol}
+    \newpage
+\end{document}
